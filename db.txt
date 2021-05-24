@@ -1,0 +1,16 @@
+Modellizzare la struttura di una tabella per memorizzare tutti i dati
+riguardanti delle auto usate messe in vendita da un concessionario
+
+
+id:  INT - [PRIMARY_KEY(AUTO_INCREMENT - UNIQUE - INDEX)] - [NOTNULL];
+prezzo: NUMBER - [MEDIUMINT] - [NOTNULL];
+marca: STRING - [VARCHAR(20)] - [NOTNULL] - [INDEX];
+modello: STRING - [VARCHAR(25)] - [NOTNULL] - [INDEX];
+anno_immatricolazione: YEAR - [NOTNULL];
+paese: STRING - [VARCHAR(10)] - [NOTNULL];
+chilometri: NUMBER - [SMALLINT];
+potenza: NUMBER - [SMALLINT];
+cilindrata: NUMBER - [SMALLINT] - [NOTNULL];
+colore: STRING - [VARCHAR(15)];
+targa: STRING - [VARCHAR(7)] - [NOTNULL];
+classe_veicolo: STRING - [VARCHAR(15)] - [NOTNULL];
